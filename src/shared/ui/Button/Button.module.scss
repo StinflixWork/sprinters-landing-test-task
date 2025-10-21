@@ -1,0 +1,84 @@
+.root {
+  display: inline-flex;
+  column-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid transparent;
+
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+
+  transition: all .3s ease-out;
+
+  /* -----VARIANTS----- */
+
+  &.solid {
+    background-color: var(--primary);
+    color: #fff;
+
+    &:hover {
+      background-color: var(--primary-light);
+    }
+
+    &:active {
+      background-color: var(--primary-dark);
+    }
+  }
+
+  &.outlined {
+    border-color: var(--primary);
+    color: var(--primary);
+
+    &:hover {
+      color: var(--accent);
+      border-color: var(--primary-light);
+    }
+
+    &:active {
+      color: var(--primary-dark);
+      border-color: var(--primary-dark);
+    }
+  }
+
+  &.ghost {
+    background-color: transparent;
+    color: var(--primary);
+
+    &:hover {
+      background-color: var(--primary-bg-hover);
+    }
+
+    &:active {
+      border-color: var(--primary-dark);
+    }
+  }
+
+  &.link {
+    border: none;
+    padding: 0 !important;
+    color: var(--primary);
+    font-weight: 600;
+
+    &:hover {
+      color: var(--primary-light);
+    }
+
+    &:active {
+      color: var(--primary-dark);
+    }
+  }
+
+  /* -----SIZES----- */
+
+  &.sm {
+    padding: 8px;
+    font-weight: 500;
+  }
+
+  &.md {
+    padding-block: 12px;
+    padding-inline: 24px;
+  }
+}

@@ -1,0 +1,35 @@
+.root {
+  padding-block: 40px;
+  background: url("../../../../shared/assets/images/Reviews-bg.png") no-repeat;
+  background-size: cover;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+    overflow: visible;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+
+  @media (width > 767.98px) {
+    padding-block: 72px 45px;
+
+    .container {
+      flex-direction: row;
+    }
+
+    .content {
+      max-width: 320px;
+    }
+  }
+
+  @media (width > 899.98px) {
+    .content {
+      max-width: 420px;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.root {
+  padding-block: 40px;
+  background-color: var(--neutral-10);
+
+  @media (width >= 767.98px) {
+    background: url("../../../../shared/assets/images/Profile-bg.png") no-repeat;
+    background-size: cover;
+    padding-block: 40px 72px;
+  }
+}

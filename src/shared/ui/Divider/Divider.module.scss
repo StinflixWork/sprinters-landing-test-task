@@ -1,0 +1,14 @@
+.root {
+  background-color: var(--neutral-20);
+
+  &.horizontal {
+    width: 100%;
+    height: 1px;
+  }
+
+  &.vertical {
+    display: inline-block;
+    width: 1px;
+    min-height: 100%;
+  }
+}
