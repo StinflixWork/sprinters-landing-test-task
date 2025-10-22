@@ -11,6 +11,7 @@ export const Header = () => {
 
 	const handleOpenBurgerMenu = () => {
 		setIsOpen(prevOpen => !prevOpen)
+		document.body.classList.toggle('lock')
 	}
 
 	return (
@@ -23,4 +24,3 @@ export const Header = () => {
 		</header>
 	)
 }
-// Fix scroll in burger menu

@@ -38,5 +38,9 @@
 }
 
 body {
-    color: var(--neutral-100)
+    color: var(--neutral-100);
+}
+
+body.lock {
+    overflow: hidden;
 }
